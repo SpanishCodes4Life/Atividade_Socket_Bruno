@@ -1,0 +1,21 @@
+1. remover corrente da lista: atribui o próximo do anterior do nó ao próximo de corrente: 
+anterior.proximo=corrente.proximo;
+
+2.NovoNo.proximo=corrente.proximo
+corrente.proximo =NovoNo
+
+
+3.   ListNode temp = a;
+a = a.next;
+a.next = b;
+b=temp;
+b.next = null;
+ 
+
+4. a) |3|null|
+b) |3| | -> |3|null|
+c) |3| | -> |3|3| -> |3|null|
+
+5. a) |carol| | -> |fabrice|null|
+b) |allen| | -> |fabrice|null|
+c) |donald| | ->  null
